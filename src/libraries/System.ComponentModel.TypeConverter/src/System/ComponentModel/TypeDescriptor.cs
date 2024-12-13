@@ -2931,7 +2931,7 @@ namespace System.ComponentModel
                         bool match = false;
                         for (int existingIdx = 0; existingIdx < existing.Count; existingIdx++)
                         {
-                            if (newArray[existingIdx].TypeId.Equals(newAttrs[idx].TypeId))
+                            if (newArray[existingIdx]?.TypeId.Equals(newAttrs[idx].TypeId))
                             {
                                 match = true;
                                 newArray[existingIdx] = newAttrs[idx];
